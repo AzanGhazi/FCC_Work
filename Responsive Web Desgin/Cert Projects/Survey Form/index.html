@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Raze Studio Development Survey - Next project releases" />
+    <title>Raze Studio Development Survey</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <img id="logo" src="./logo.svg">
+      <h1 id="title">Raze Game studios</h1>
+      <nav>
+        <ul>
+            <li><a href="#voter-info" accessKey="v">About You</a></li>
+            <li><a href="#survey-questions" accessKey="s">Survey</a></li>
+            <li><a href="#submit" accessKey="e">Submit</a></li>
+          </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="titleS">
+        <h1 id="title">Raze Studio Development Survey</h1>
+        <p id="description">Thank you for participating in this development survey</p>
+         </div>
+      <form method="post" action="./action.html" id="survey-form">
+        <section role="region" aria-labelledby="voter-info">
+          <h2 id="voter-info">Voter Info</h2>
+          <div class="info">
+            <label for="name" id="name-label">Name:</label>
+            <input type="text" name="voter-name" id="name" class ="form-input" placeholder ="Enter your name" required/>
+          </div>
+          <div class="info">
+            <label for="email" id="email-label">Email:</label>
+            <input type="email" name="voter-email" id="email" class ="form-input" placeholder ="Enter your email" required/>
+          </div>
+          <div class="info">
+            <label for="number" id="number-label">Age:</label>
+            <input type="number" name="number"  class ="form-input" id="number" placeholder ="Enter your age" min="13" max="82"/>
+          </div>
+          <div class="info">
+            <label for="voter-job">What best describes your current role?</label>
+            <select name="voter-job" class ="form-input" id="dropdown" required>
+                <option disabled selected value="default">Select Current Role</option>
+                <option value="StudentHS">Highschool Student</option>
+                <option value="StudentUNI">Collage/University Student</option>
+                <option value="fulltech">Full Time Job in Tech</option>
+                <option value="fullcorp">Full Time Job in Corperate</option>
+                <option value="fullreg">Full Time Job in another field</option>
+                <option value="prefNo">Prefer not to say</option>
+                <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="info">
+            <label for="voter-org">Company Name:</label>
+            <input type="text" name="voter-org" id="voter-org" class ="form-input" placeholder ="Enter your organization (optional)"/>
+          </div>
+        </section>
+        <!-- Favourite genera, Favourite themes and elements, Favourite power systems, Kinds of consoles/mediums for games. Perfered studios, Upcoming releases you look forward to playing -->
+        <section role="region" aria-labelledby="survey-questions">
+            <h2 id="voter-info">Survey Questions</h2>
+            <div class="question">
+                <p>How long do you spend playing games on a weekly basis?</p>
+                <label class="answer-val">
+                    <input name="hours-played" value="under-10" type="radio" class="input-radio">
+                    Less then 10 hours a week.
+                </label>
+                <label class="answer-val">
+                    <input name="hours-played" value="under-20" type="radio" class="input-radio">
+                    Between 10 and 20  hours a week.
+                </label>
+                <label class="answer-val">
+                    <input name="hours-played" value="under-40" type="radio" class="input-radio">
+                    Between 20 and 40 hours a week. 
+                </label>
+            </div>
+            <div class="question">
+                <p>What is your Favourite game genera?</p>
+                <label class="answer-val">
+                    <input name="Favourite-genera" value="Action" type="radio" class="input-radio">
+                    Action
+                </label>
+                <label class="answer-val">
+                    <input name="Favourite-genera" value="Adventure" type="radio" class="input-radio">
+                    Adventure
+                </label>
+                <label class="answer-val">
+                    <input name="Favourite-genera" value="Horror" type="radio" class="input-radio">
+                    Horror 
+                </label>
+                <label class="answer-val">
+                    <input name="Favourite-genera" value="RPG" type="radio" class="input-radio">
+                    RPG
+                </label>
+                <label class="answer-val">
+                    <input name="Favourite-genera" value="Fighting" type="radio" class="input-radio">
+                    Fighting
+                </label>
+                <label class="answer-val">
+                    <input name="Favourite-genera" value="Management" type="radio" class="input-radio">
+                    Management
+                </label>
+                <label class="answer-val">
+                    <input name="Favourite-genera" value="FPS" type="radio" class="input-radio">
+                    FPS
+                </label>
+                <label class="answer-val">
+                    <input name="Favourite-genera" value="Strategy" type="radio" class="input-radio">
+                    Strategy
+                </label>
+                <label class="answer-val">
+                    <input name="Favourite-genera" value="Sports" type="radio" class="input-radio">
+                    Sports
+                </label>
+                <label class="answer-val">
+                    <input name="Favourite-genera" value="Puzzles" type="radio" class="input-radio">
+                    Puzzles
+                </label>
+                <label class="answer-val">
+                    <input name="Favourite-genera" value="Stealth" type="radio" class="input-radio">
+                    Stealth
+                </label>
+                <label class="answer-val">
+                    <input name="Favourite-genera" value="Survival" type="radio" class="input-radio">
+                    Survival
+                </label>
+            </div>
+            <div class="question">
+                <p>What are your perfered playforms for gaming?</p>
+                <label class="answer-val">
+                    <input name="hours-played" value="under-10" type="checkbox" class="input-radio">
+                    Mobile
+                </label>
+                <label class="answer-val">
+                    <input name="hours-played" value="under-20" type="checkbox" class="input-radio">
+                    Computer - PC
+                </label>
+                <label class="answer-val">
+                    <input name="hours-played" value="under-40" type="checkbox" class="input-radio">
+                    Computer - MAC
+                </label>
+                <label class="answer-val">
+                    <input name="hours-played" value="under-40" type="checkbox" class="input-radio">
+                    Playstation
+                </label>
+                <label class="answer-val">
+                    <input name="hours-played" value="under-40" type="checkbox" class="input-radio">
+                    Xbox
+                </label>
+                <label class="answer-val">
+                    <input name="hours-played" value="under-40" type="checkbox" class="input-radio">
+                    Nintendo Console
+                </label>
+            </div>
+            <div class="question">
+                <p>What is your perfered playform for gameing?</p>
+                <label class="answer-val">
+                    <input name="hours-played" value="under-10" type="radio" class="input-radio">
+                    Mobile
+                </label>
+                <label class="answer-val">
+                    <input name="hours-played" value="under-20" type="radio" class="input-radio">
+                    Computer - PC
+                </label>
+                <label class="answer-val">
+                    <input name="hours-played" value="under-40" type="radio" class="input-radio">
+                    Computer - MAC
+                </label>
+                <label class="answer-val">
+                    <input name="hours-played" value="under-40" type="radio" class="input-radio">
+                    Playstation
+                </label>
+                <label class="answer-val">
+                    <input name="hours-played" value="under-40" type="radio" class="input-radio">
+                    Xbox
+                </label>
+                <label class="answer-val">
+                    <input name="hours-played" value="under-40" type="radio" class="input-radio">
+                    Nintendo Console
+                </label>
+            </div>
+            <div class="question q2">
+                <label for="favourite-features">What is your favourite feature in a video game?</label>
+                <select name="voter-job" class ="form-input" id="voter-job" required>
+                    <option disabled selected value="default">Select favourite feature</option>
+                    <option value="StudentHS">Multiple endings</option>
+                    <option value="StudentUNI">Multiplayer</option>
+                    <option value="fulltech">Online Versus</option>
+                    <option value="fullcorp">Constant events</option>
+                    <option value="fullreg">Full Time Job in another field</option>
+                    <option value="prefNo">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+              </div>
+            <div class="question-block q2">
+              <label for="css-textarea">Anything you would like to tell us?</label>
+            </div>
+            <div class="answer">
+              <textarea id="css-textarea" name="css-questions" rows="5" cols="24" placeholder="Who is flexbox..."></textarea>
+            </div>
+          </div>
+        </section>
+        <section role="region" aria-labelledby="submit">
+        <button type="submit" id="submit">Send</button>
+        </section>
+    </form>
+    </main>
+    <footer>
+      <address>
+        <a href="https://www.linkedin.com/in/azan-g-12642a163/">Raze Game Studio ~ Azan Ghazi</a><br />
+        Mississauga<br />
+        Ontario<br />
+        Canada
+      </address>
+    </footer>
+  </body>
+</html>
